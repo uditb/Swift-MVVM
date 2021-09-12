@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum ServiceResponse <T, error: Error>{
-    case success(T)
+enum ServiceResponse <Data, error: Error>{
+    case success(Data)
     case failure(error)
 }
 

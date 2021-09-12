@@ -42,7 +42,6 @@ extension UserViewController : UITabBarDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as? UserCell
         
         let userModel = userVM.arrUserArr[indexPath.row]
-        //        print(userModel.title)
         cell?.userModel = userModel
         
         return cell!
